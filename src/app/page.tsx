@@ -14,7 +14,7 @@ export default function Home() {
       <div className="max-w-2xl mx-auto">
         <div className="w-full relative aspect-[3/2]">
           <Image 
-            src="https://i.imgur.com/NjjBobw.png"
+            src="https://raw.githubusercontent.com/David1780010/Humbl-cookies-app/9d7381ab44330bb52318589923c85d38c72cb185/detalis.png"
             alt="Details"
             fill
             style={{ objectFit: 'cover' }}
