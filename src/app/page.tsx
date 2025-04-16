@@ -15,7 +15,7 @@ export default function Home() {
           <img 
             src="https://raw.githubusercontent.com/David1780010/Humbl-cookies-app/9d7381ab44330bb52318589923c85d38c72cb185/detalis.png"
             alt="Details"
-            className="w-full max-h-[400px] object-contain rounded-lg"
+            className="w-full max-h-[300px] object-contain rounded-lg"
           />
         </div>
       </div>
