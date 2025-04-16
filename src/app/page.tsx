@@ -9,14 +9,15 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-[#ffd4e5]">
       <div className="w-full">
         <img 
-          src="https://raw.githubusercontent.com/David1780010/Humbl-cookies-app/9d7381ab44330bb52318589923c85d38c72cb185/detalis.png"
-          alt="Details"
+          src="https://i.imgur.com/4jnqmkN.png"
+          alt="Humbl Cookies"
           className="w-full object-contain"
           style={{
-            maxHeight: 'calc(100vh - 20px)'
+            maxHeight: '280px',
+            marginTop: '-20px'
           }}
         />
       </div>
