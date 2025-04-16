@@ -8,6 +8,11 @@
   --background-end-rgb: 255, 255, 255;
 }
 
+/* Предотвращение нежелательных жестов */
+html {
+  overscroll-behavior-y: none;
+}
+
 body {
   margin: 0;
   padding: 0;
