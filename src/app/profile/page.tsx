@@ -1,17 +1,10 @@
-import Image from 'next/image';
 import Navigation from '@/components/Navigation';
 
-export default function Home() {
+export default function Profile() {
   return (
     <main className="min-h-screen bg-white">
       <div className="flex flex-col items-center justify-center p-4">
-        <Image
-          src="https://i.imgur.com/znFJkU2.png"
-          alt="Cookie"
-          width={300}
-          height={300}
-          priority
-        />
+        <h1>Профиль</h1>
       </div>
       <Navigation />
     </main>
