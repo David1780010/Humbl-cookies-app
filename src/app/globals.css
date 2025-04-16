@@ -2,7 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  margin: 0;
-  padding: 0;
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+/* Запрет масштабирования и свайпов */
+html, body {
+  touch-action: none;
+  overscroll-behavior: none;
+  -webkit-overflow-scrolling: touch;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+/* Разрешаем только вертикальную прокрутку внутри основного контейнера */
+.min-h-screen {
+  touch-action: pan-y;
+  overflow-y: auto;
+  height: 100%;
+  position: relative;
 }
