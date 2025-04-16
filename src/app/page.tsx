@@ -2,6 +2,7 @@
 
 import { useEffect } from 'react';
 import { initTelegramApp } from '@/utils/telegram';
+import Navigation from '@/components/Navigation';
 
 export default function Home() {
   useEffect(() => {
@@ -9,7 +10,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-white p-4">
+    <div className="min-h-screen bg-white p-4 pb-24">
       <div className="max-w-md mx-auto mt-8">
         <div className="w-full relative">
           <img 
@@ -19,6 +20,7 @@ export default function Home() {
           />
         </div>
       </div>
+      <Navigation />
     </div>
   );
 }
