@@ -1,11 +1,10 @@
 'use client';
 
-import { useEffect } from "react";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
-import { preventGestures } from "@/utils/preventGestures";
+import ClientLayout from "./ClientLayout";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -30,13 +29,9 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
-  useEffect(() => {
-    preventGestures();
-  }, []);
-
+}) {
   return (
     <html lang="ru">
       <head>
@@ -49,7 +44,7 @@ export default function RootLayout({
           src="https://telegram.org/js/telegram-web-app.js"
           strategy="beforeInteractive"
         />
-        {children}
+        <ClientLayout>{children}</ClientLayout>
       </body>
     </html>
   );
