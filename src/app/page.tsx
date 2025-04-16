@@ -10,15 +10,18 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-white">
-      <div className="w-full relative h-[200px]">
-        <Image 
-          src="https://i.imgur.com/znFJkU2.png"
-          alt="Details"
-          fill
-          style={{ objectFit: 'contain' }}
-          priority
-        />
+    <div className="min-h-screen bg-white p-4">
+      <div className="max-w-2xl mx-auto">
+        <div className="w-full relative aspect-[3/2]">
+          <Image 
+            src="https://i.imgur.com/znFJkU2.png"
+            alt="Details"
+            fill
+            style={{ objectFit: 'cover' }}
+            className="rounded-lg"
+            priority
+          />
+        </div>
       </div>
     </div>
   );
