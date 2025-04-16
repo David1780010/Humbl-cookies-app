@@ -1,8 +1,7 @@
 'use client';
 
-import Image from 'next/image';
 import { useEffect } from 'react';
-import { initTelegramApp } from '../utils/telegram';
+import { initTelegramApp } from '@/utils/telegram';
 
 export default function Home() {
   useEffect(() => {
@@ -10,17 +9,16 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="min-h-screen flex flex-col items-center justify-start bg-[#ffd4e5]">
-      <div className="w-full max-w-[500px] relative pt-4 px-4">
-        <Image
-          src="https://i.imgur.com/4jnqmkN.png"
-          alt="Humbl Cookies"
-          width={500}
-          height={500}
-          priority
-          className="w-full h-auto"
-        />
+    <div className="min-h-screen bg-white p-4">
+      <div className="max-w-md mx-auto mt-8">
+        <div className="w-full relative">
+          <img 
+            src="https://raw.githubusercontent.com/David1780010/Humbl-cookies-app/9d7381ab44330bb52318589923c85d38c72cb185/detalis.png"
+            alt="Details"
+            className="w-full max-h-[300px] object-contain rounded-lg"
+          />
+        </div>
       </div>
-    </main>
+    </div>
   );
 }
