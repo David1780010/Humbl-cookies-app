@@ -9,8 +9,17 @@
 }
 
 /* Предотвращение нежелательных жестов */
-html {
-  overscroll-behavior-y: none;
+html, body {
+  overscroll-behavior: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Разрешаем только вертикальную прокрутку */
+.min-h-screen {
+  touch-action: pan-y;
 }
 
 body {
