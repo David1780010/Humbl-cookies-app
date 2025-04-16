@@ -13,7 +13,7 @@ export default function Home() {
     <div className="min-h-screen bg-white">
       <div className="w-full relative h-[200px]">
         <Image 
-          src="https://i.postimg.cc/svn84yrm/detalis.png"
+          src="https://i.imgur.com/znFJkU2.png"
           alt="Details"
           fill
           style={{ objectFit: 'contain' }}
