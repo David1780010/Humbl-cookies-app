@@ -14,7 +14,7 @@ export default function Home() {
       <div className="max-w-2xl mx-auto">
         <div className="w-full relative aspect-[3/2]">
           <Image 
-            src="https://i.imgur.com/znFJkU2.png"
+            src="https://i.imgur.com/NjjBobw.png"
             alt="Details"
             fill
             style={{ objectFit: 'cover' }}
